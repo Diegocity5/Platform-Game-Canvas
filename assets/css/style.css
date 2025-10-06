@@ -67,7 +67,8 @@ body {
 }
 /*CANVAS*/
 #canvas {
-    display: none;
+    outline: 1px solid violet;
+    /* display: none; */
 }
 
 /*Breakpoints_Mediaqueries*/
