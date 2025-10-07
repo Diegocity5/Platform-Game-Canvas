@@ -11,3 +11,8 @@ canvas.height = innerHeight;
 const gravity = 0.5;
 
 let isCheckpointCollisionDetectionActive = true;
+
+//Make sure internal elements are proportional across different screen sizes.
+const proportionalSize = (size)=>{
+
+}
