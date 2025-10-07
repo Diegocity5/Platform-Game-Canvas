@@ -14,5 +14,6 @@ let isCheckpointCollisionDetectionActive = true;
 
 //Make sure internal elements are proportional across different screen sizes.
 const proportionalSize = (size)=>{
-
+    //Calculando la proporcion de los elementos internos  en base al innerHeight.
+    return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 }
