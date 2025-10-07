@@ -19,5 +19,6 @@ const proportionalSize = (size)=>{
 }
 
 class Player {
-    
+    contructor(){
+    }
 }
