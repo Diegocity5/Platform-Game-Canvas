@@ -31,4 +31,8 @@ class Player {
         this.width = proportionalSize(40),
         this.height = proportionalSize(40)
     }
+    //Metodo responsable dibujar usando el ancho, alto y aplicar relleno de color. 
+    draw(){
+        
+    }
 }
