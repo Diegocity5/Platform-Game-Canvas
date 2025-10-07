@@ -20,6 +20,9 @@ const proportionalSize = (size)=>{
 
 class Player {
     contructor(){
-        this.position = {};
+        this.position = {
+            x: proportionalSize(10),
+            y: proportionalSize(400)
+        };
     }
 }
