@@ -38,6 +38,6 @@ class Player {
     }
     //Metodo responsable de actualizar la posicion y velocidad del jugador a medida que se mueve.
     update(){
-        
+        this.draw();
     }
 }
