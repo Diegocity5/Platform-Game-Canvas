@@ -42,7 +42,10 @@ class Player {
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
         if(this.position.y + this.height + this.velocity.y <= canvas.height){
-            
+            if(this.position.y < 0){
+                //Actualizando la position.y a 0  para soltar la acumulacion  en y.
+                this.position.y = 0;
+            }
         }
     }
 }
