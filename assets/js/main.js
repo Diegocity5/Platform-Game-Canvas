@@ -36,19 +36,26 @@ class Player {
         ctx.fillStyle = "#99c9ff",
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
-    //Metodo responsable de actualizar la posicion y velocidad del jugador a medida que se mueve.
+    //Método responsable de actualizar la posición y velocidad del jugador en cada frame.
     update(){
+        //// Dibuja el rectángulo del jugador en su posición actual.
         this.draw();
+        // Actualiza la posición horizontal y vertical según la velocidad actual.
         this.position.x += this.velocity.x;
         this.position.y += this.velocity.y;
+        //Verifica si el jugador sigue dentro del canvas por la parte inferior.
         if(this.position.y + this.height + this.velocity.y <= canvas.height){
+            //Verifica si el jugador se ha salido por la parte superior del canvas.
             if(this.position.y < 0){
-                //Actualizando la position.y a 0 ya que el elemento se sale de la altura del canvas.
+                //Reubica al jugador dentro del canvas (parte superior).
                 this.position.y = 0;
+                //Reinicia la velocidad vertical para que empiece a caer.
                 this.velocity.y = gravity;
             }
+            //Si está dentro del canvas, acumula gravedad para simular caída.
             this.velocity.y += gravity;
         }else {
+            //Si se pasó del borde inferior, detiene la caída.
             this.velocity.y = 0;
         }
     }
