@@ -33,6 +33,7 @@ class Player {
     }
     //Metodo responsable dibujar usando el ancho, alto y aplicar relleno de color. 
     draw(){
-        ctx.fillStyle = "#99c9ff"
+        ctx.fillStyle = "#99c9ff",
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 }
