@@ -36,4 +36,8 @@ class Player {
         ctx.fillStyle = "#99c9ff",
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
+    //Metodo responsable de actualizar la posicion y velocidad del jugador a medida que se mueve.
+    update(){
+        
+    }
 }
