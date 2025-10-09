@@ -65,7 +65,7 @@ class Player {
         }
         //Estableciendo el limite de la derecha restandole dos veces su ancho para dejar un borde del doble del ancho.
         if(this.position.x >= canvas.width - this.width * 2){
-            
+            this.position.x = canvas.width - this.width * 2;
         }
     }
 }
