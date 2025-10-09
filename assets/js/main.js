@@ -79,5 +79,10 @@ const startGame = ()=> {
     player.draw();
 }
 
+//Funcion encargada de la logica de animación.
+const animate = ()=> {
+    
+}
+
 //Evento click sobre el boton startBtn
 startBtn.addEventListener('click', startGame);
