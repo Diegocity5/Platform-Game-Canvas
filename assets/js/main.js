@@ -19,21 +19,21 @@ const proportionalSize = (size)=>{
 }
 
 class Player {
-    contructor(){
+    constructor(){
         this.position = {
             x: proportionalSize(10),
-            y: proportionalSize(400)
+            y: proportionalSize(400),
         };
         this.velocity = {
             x: 0,
-            y: 0
-        }
-        this.width = proportionalSize(40),
-        this.height = proportionalSize(40)
+            y: 0,
+        };
+        this.width = proportionalSize(40);
+        this.height = proportionalSize(40);
     }
     //Metodo responsable dibujar usando el ancho, alto y aplicar relleno de color. 
     draw(){
-        ctx.fillStyle = "#99c9ff",
+        ctx.fillStyle = "#99c9ff";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
     //Método responsable de actualizar la posición y velocidad del jugador en cada frame.
