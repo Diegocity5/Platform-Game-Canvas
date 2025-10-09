@@ -68,7 +68,7 @@ body {
 /*CANVAS*/
 #canvas {
     outline: 3px solid violet;
-    /* display: none; */
+    display: none;
 }
 
 /*Breakpoints_Mediaqueries*/
