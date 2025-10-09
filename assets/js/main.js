@@ -58,5 +58,10 @@ class Player {
             //Si se pasó del borde inferior, detiene la caída.
             this.velocity.y = 0;
         }
+
+        //Estableciendo el limite de la izquierda si la posicion x es menor que el ancho del player es porque se esta saliendo una parte del player.
+        if(this.position.x < this.width){
+            this.position.x = this.width;//Sera la posicion x el mismo size del ancho del player.
+        }
     }
 }
