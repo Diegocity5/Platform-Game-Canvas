@@ -63,5 +63,9 @@ class Player {
         if(this.position.x < this.width){
             this.position.x = this.width;//Sera la posicion x el mismo size del ancho del player.
         }
+        //Estableciendo el limite de la derecha restandole dos veces su ancho para dejar un borde del doble del ancho.
+        if(this.position.x >= canvas.width - this.width * 2){
+            
+        }
     }
 }
