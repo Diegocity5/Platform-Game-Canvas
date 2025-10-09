@@ -78,3 +78,6 @@ const startGame = ()=> {
     //Dibujando el jugador por primera vez en pantalla.
     player.draw();
 }
+
+//Evento click sobre el boton startBtn
+startBtn.addEventListener('click', startGame);
