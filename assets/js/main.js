@@ -69,3 +69,5 @@ class Player {
         }
     }
 }
+
+const player = new Player();
