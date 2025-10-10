@@ -86,5 +86,15 @@ const animate = ()=> {
     player.update();
 }
 
+//Guardar los valores de la teclas.
+const keys = {
+    rightKey: {
+        pressed: false,
+    },
+    leftKey: {
+        pressed: false,
+    }
+};
+
 //Evento click sobre el boton startBtn
 startBtn.addEventListener('click', startGame);
