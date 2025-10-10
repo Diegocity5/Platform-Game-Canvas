@@ -82,6 +82,7 @@ const startGame = ()=> {
 //Funcion encargada de la logica de animación.
 const animate = ()=> {
     requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 //Evento click sobre el boton startBtn
