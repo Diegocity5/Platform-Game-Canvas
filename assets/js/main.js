@@ -84,6 +84,11 @@ const animate = ()=> {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     player.update();
+
+    //Valido el estado de rightKey y ajusto la proporcion de pantalla si la posicion es menor a 400.
+    if(keys.rightKey.pressed && player.position.x < proportionalSize(400)){
+        proportionalSize(player.position.x);
+    }
 }
 
 //Guardar los valores de la teclas.
