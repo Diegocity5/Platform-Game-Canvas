@@ -31,7 +31,7 @@ class Player {
         this.width = proportionalSize(40);
         this.height = proportionalSize(40);
     }
-    //Metodo responsable dibujar usando el ancho, alto y aplicar relleno de color. 
+    //Metodo responsable de dibujar usando el ancho, alto y aplicar relleno de color. 
     draw(){
         ctx.fillStyle = "#99c9ff";
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
@@ -106,8 +106,7 @@ const keys = {
 };
 
 //Funcion encargada de mover el jugador por la pantalla.
-const movePlayer = (key, xVelocity, isPressed)=>{
-
+const movePlayer = (key, xVelocity, isPressed)=>{ 
 };
 
 //Evento click sobre el boton startBtn
