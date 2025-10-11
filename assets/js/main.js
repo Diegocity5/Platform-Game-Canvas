@@ -88,6 +88,8 @@ const animate = ()=> {
     //Valido el estado de rightKey y ajusto la proporcion de pantalla si la posicion es menor a 400.
     if(keys.rightKey.pressed && player.position.x < proportionalSize(400)){
         player.velocity.x = 5;
+    }else if(keys.leftKey.pressed && player.position.x > proportionalSize(100)){
+        player.velocity.x = -5;
     }
 }
 
