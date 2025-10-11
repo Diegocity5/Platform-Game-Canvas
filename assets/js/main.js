@@ -105,5 +105,10 @@ const keys = {
     }
 };
 
+//Funcion encargada de mover el jugador por la pantalla.
+const movePlayer = (key, xVelocity, isPressed)=>{
+
+};
+
 //Evento click sobre el boton startBtn
 startBtn.addEventListener('click', startGame);
