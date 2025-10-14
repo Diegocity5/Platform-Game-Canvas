@@ -107,6 +107,9 @@ const keys = {
 
 //Funcion encargada de mover el jugador por la pantalla.
 const movePlayer = (key, xVelocity, isPressed)=>{ 
+    if(!isCheckpointCollisionDetectionActive){
+        
+    }
 };
 
 //Evento click sobre el boton startBtn
