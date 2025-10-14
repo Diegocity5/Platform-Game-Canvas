@@ -112,7 +112,11 @@ const movePlayer = (key, xVelocity, isPressed)=>{
         player.velocity.y = 0;
         return;
     }
-    
+
+    //Opciones de control de keys.
+    switch(key){
+        
+    }
 };
 
 //Evento click sobre el boton startBtn
