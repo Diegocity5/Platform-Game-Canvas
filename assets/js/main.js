@@ -115,7 +115,11 @@ const movePlayer = (key, xVelocity, isPressed)=>{
 
     //Opciones de control de keys.
     switch(key){
-        
+        case 'ArrowLeft':
+            keys.leftKey.pressed = isPressed;
+            if(xVelocity === 0){
+                player.velocity.x = xVelocity;
+            }
     }
 };
 
