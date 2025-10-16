@@ -141,5 +141,5 @@ const movePlayer = (key, xVelocity, isPressed)=>{
 startBtn.addEventListener('click', startGame);
 //Evento keydown sobre el objeto global padre window para reconocer las tecla.
 window.addEventListener('keydown', ({key})=>{
-    
+    movePlayer(key, 8, true);
 });
