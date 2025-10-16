@@ -145,5 +145,5 @@ window.addEventListener('keydown', ({key})=>{
 });
 //Evento keyup sobre el objeto global padre window para reconocer las teclas.
 window.addEventListener('keyup', ({key})=>{
-    
+    movePlayer(key, 0, false);
 });
