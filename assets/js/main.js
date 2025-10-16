@@ -75,8 +75,7 @@ const player = new Player();
 const startGame = ()=> {
     canvas.style.display = 'block';
     startScreen.style.display = 'none';
-    //Dibujando el jugador por primera vez en pantalla.
-    player.draw();
+    animate();
 }
 
 //Funcion encargada de la logica de animación.
