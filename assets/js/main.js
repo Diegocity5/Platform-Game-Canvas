@@ -143,3 +143,7 @@ startBtn.addEventListener('click', startGame);
 window.addEventListener('keydown', ({key})=>{
     movePlayer(key, 8, true);
 });
+//Evento keyup sobre el objeto global padre window para reconocer las teclas.
+window.addEventListener('keyup', ({key})=>{
+    
+});
