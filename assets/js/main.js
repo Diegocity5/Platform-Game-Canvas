@@ -20,7 +20,9 @@ const proportionalSize = (size)=>{
 
 class Platform {
     constructor(x, y){
-        
+     this.position = {
+        x, y
+     }
     }
 }
 class Player {
