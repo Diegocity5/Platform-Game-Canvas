@@ -24,6 +24,7 @@ class Platform {
         x, y
      };
      this.width = 200;
+     this.height = proportionalSize(40);
     }
 }
 class Player {
