@@ -122,6 +122,9 @@ const animate = ()=> {
         player.velocity.x = -5;
     }else {
         player.velocity.x = 0;
+        if(keys.rightKey.pressed && isCheckpointCollisionDetectionActive){
+            
+        }
     }
 }
 
