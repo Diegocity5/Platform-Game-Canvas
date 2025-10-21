@@ -128,6 +128,8 @@ const animate = ()=> {
             platforms.forEach(platform => platform.position.x += 5);
         }
     }
+    //Logica detencion de collision.
+    platforms.forEach(platform => {});
 }
 
 //Guardar los valores de la teclas.
