@@ -99,7 +99,8 @@ class Player {
 }
 
 const player = new Player();
-const platforms = platformPositions.map();
+const platforms = platformPositions.map(platform => new Platform(platform.x, platform.y));
+
 
 const startGame = ()=> {
     canvas.style.display = 'block';
