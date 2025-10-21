@@ -18,6 +18,10 @@ const proportionalSize = (size)=>{
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 }
 
+const platformPositions = [
+    
+];
+
 class Platform {
     constructor(x, y){
      this.position = {
