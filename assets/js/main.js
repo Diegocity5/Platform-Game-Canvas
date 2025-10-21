@@ -19,7 +19,7 @@ const proportionalSize = (size)=>{
 }
 
 const platformPositions = [
-    { x: 500, y: proportionalSize(450)}, 
+    { x: 500, y: proportionalSize(450)},
     { x: 700, y: proportionalSize(400)},
     { x: 850, y: proportionalSize(350)},
     { x: 900, y: proportionalSize(350)},
@@ -129,7 +129,11 @@ const animate = ()=> {
         }
     }
     //Logica detencion de collision.
-    platforms.forEach(platform => {});
+    platforms.forEach(platform => {
+        const collisionDetectionRules = [
+            player.position.y + player.height <= platform.position.y
+        ];
+    });
 }
 
 //Guardar los valores de la teclas.
