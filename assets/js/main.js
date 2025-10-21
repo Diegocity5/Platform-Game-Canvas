@@ -99,6 +99,7 @@ class Player {
 }
 
 const player = new Player();
+const platforms = platformPositions.map();
 
 const startGame = ()=> {
     canvas.style.display = 'block';
