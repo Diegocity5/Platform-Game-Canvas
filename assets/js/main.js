@@ -19,7 +19,10 @@ const proportionalSize = (size)=>{
 }
 
 const platformPositions = [
-    
+    {
+        x: 500,
+        y: proportionalSize(450)
+    }
 ];
 
 class Platform {
