@@ -43,6 +43,10 @@ class CheckPoint {
         this.height = proportionalSize(70);
         this.claimed = false;
     }
+    draw(){
+        ctx.fillStyle = "#f1be32";
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
 }
 class Platform {
     constructor(x, y){
