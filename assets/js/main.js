@@ -33,6 +33,14 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150)},
 ];
 
+class CheckPoint {
+    constructor(x,y,z){
+        this.position = {
+            x,
+            y
+        }
+    }
+}
 class Platform {
     constructor(x, y){
      this.position = {
