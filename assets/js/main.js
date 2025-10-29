@@ -127,6 +127,7 @@ class Player {
 
 const player = new Player();
 const platforms = platformPositions.map(platform => new Platform(platform.x, platform.y));
+const checkpoints = checkpointPositions.map((checkpoint)=> new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
 
 
 const startGame = ()=> {
