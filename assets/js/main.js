@@ -234,6 +234,11 @@ const movePlayer = (key, xVelocity, isPressed)=>{
 const showCheckpointScreen = (msg)=> {
     checkpointScreen.style.display = "block";
     checkpointMessage.textContent = msg;
+    if(isCheckpointCollisionDetectionActive){
+        setTimeout(()=>{
+            checkpointScreen.style.display = "none";
+        }, 2000);
+    }
 }
 
 //Evento click sobre el boton startBtn
