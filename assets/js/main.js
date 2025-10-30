@@ -230,6 +230,11 @@ const movePlayer = (key, xVelocity, isPressed)=>{
     }
 };
 
+//Funcion encargada de mostrar el mensaje de lograr el checkpoint.
+const showCheckpointScreen = (msg)=> {
+    
+}
+
 //Evento click sobre el boton startBtn
 startBtn.addEventListener('click', startGame);
 //Evento keydown sobre el objeto global padre window para reconocer las tecla.
