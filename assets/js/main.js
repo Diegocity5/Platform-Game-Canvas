@@ -186,6 +186,9 @@ const animate = ()=> {
             player.velocity.y = gravity;
         }
     });
+    checkpoints.forEach((checkpoint, index, checkpoints)=>{
+
+    });
 }
 
 //Guardar los valores de la teclas.
