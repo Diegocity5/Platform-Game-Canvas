@@ -233,6 +233,7 @@ const movePlayer = (key, xVelocity, isPressed)=>{
 //Funcion encargada de mostrar el mensaje de lograr el checkpoint.
 const showCheckpointScreen = (msg)=> {
     checkpointScreen.style.display = "block";
+    checkpointMessage.textContent = msg;
 }
 
 //Evento click sobre el boton startBtn
