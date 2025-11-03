@@ -195,6 +195,9 @@ const animate = ()=> {
             player.position.x - player.width <= checkpoint.position.x - checkpoint.width + player.width * 0.9,
             index === 0 || checkpoints[index - 1].claimed === true
         ];
+        if(checkpointDetectionRules.every(rule => rule)){
+            
+        }
     });
 }
 
