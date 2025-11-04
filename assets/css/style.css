@@ -67,7 +67,6 @@ body {
 }
 /*CANVAS*/
 #canvas {
-    outline: 3px solid violet;
     display: none;
 }
 
