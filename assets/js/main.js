@@ -197,6 +197,9 @@ const animate = ()=> {
         ];
         if(checkpointDetectionRules.every(rule => rule)){
             checkpoint.claim();
+            if(index === checkpoints.length - 1){
+                
+            }
         }
     });
 }
