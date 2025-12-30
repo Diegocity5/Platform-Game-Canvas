@@ -1,1 +1,1 @@
-![Descripción de la imagen](/images/001.png)
+![Descripción de la imagen](./assets/images/001.png)
